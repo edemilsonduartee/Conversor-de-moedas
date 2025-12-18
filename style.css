@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Flex', sans-serif;
+    outline: none;
+}
+
+
+body {
+    background-color: #8a51fc;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.logo {
+    width: 300px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+
+
+main {
+    width: 375px;
+    background: #f4f4f4;
+    border-radius: 20px;
+    padding: 44px 24px 23px;
+}
+
+
+
+label {
+    color: #777777;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+select,
+input {
+    background: #ffffff;
+    border: 1px solid #bbbbbb;
+    border-radius: 4px;
+    height: 48px;
+    width: 100%;
+    margin-bottom: 24px;
+    appearance: none;
+    padding-left: 18px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #555555;
+    cursor: pointer;
+}
+
+
+button {
+    background: #772fd3;
+    border-radius: 5px;
+    height: 48px;
+    width: 100%;
+    border: none;
+    color: #ffffff;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+    background: #8a51fc;
+    cursor: pointer;
+}
+
+button:active {
+    opacity: 0.6;
+}
+
+section {
+    border: 1px solid #772fd3;
+    border-radius: 20px;
+    padding: 12px;
+    padding-top: 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.seta-img {
+    margin: 15px;
+}
+
+.box1 img,
+.box2 img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.currency {
+    font-size: 14px;
+    color: #777777;
+}
+
+.currency-value {
+    font-weight: 700;
+    font-size: 20px;
+    color: #777777;
+}
