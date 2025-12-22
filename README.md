@@ -1,10 +1,10 @@
-💱 Conversor de Moedas
+*💱 Conversor de Moedas*
 
 Um conversor de moedas moderno e responsivo, desenvolvido com HTML, CSS e JavaScript, que permite converter valores entre diferentes moedas de forma simples, visual e intuitiva.
 
 O projeto foi criado com foco em boas práticas de front-end, responsividade e organização de código, sendo ideal para estudos e portfólio.
 
-🚀 Funcionalidades
+🚀* Funcionalidades*
 
 Conversão entre:
 
@@ -34,15 +34,16 @@ Layout responsivo (desktop, notebook e mobile)
 
 Interface simples e amigável
 -----------------------------------------------------------------
-🛠️ Tecnologias Utilizadas
+🛠️ *Tecnologias Utilizadas*
 
 HTML5 – Estrutura do projeto
 
 CSS3 – Estilização, responsividade e animações
 
-JavaScript (Vanilla) – Lógica de conversão e interatividade
+JavaScript (Vanilla) - Lógica de conversão e interatividade
+
 ---------------------------------------------------------------------------
-📱 Responsividade
+📱 *Responsividade*
 
 O projeto foi desenvolvido seguindo o conceito mobile-first, com:
 
@@ -69,4 +70,4 @@ Sem rolagem horizontal indesejada
  ┗ 📄 README.md
  
 Clone do Repositorio 
-git clone https://github.com/seu-usuario/conversor-de-moedas.git
+git clone https://github.com/edemilsonduartee/Conversor-de-moedas.git
