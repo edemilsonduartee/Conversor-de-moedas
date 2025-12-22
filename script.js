@@ -47,21 +47,35 @@ function convertValues() {
     const currencyTo = currencies[currencySelect.value];
 
     if (!currencyFrom || !currencyTo) return;
+    const fromValueEl = document.querySelector("#real-value");
+    const toValueEl = document.querySelector("#converted-value");
+
+    fromValueEl.classList.remove("fade");
+    toValueEl.classList.remove("fade");
+
+    void fromValueEl.offsetWidth;
+    void toValueEl.offsetWidth;
+
+
 
     //converte para real primeiro
     const valueInReal = inputValue * currencyFrom.rate;
     //depois converte para a moeda desejada
     const convertedValue = valueInReal / currencyTo.rate;
 
-    document.querySelector("#real-value").innerHTML = new Intl.NumberFormat(currencyFrom.locale, {
+    fromValueEl.innerHTML = new Intl.NumberFormat(currencyFrom.locale, {
         style: "currency",
         currency: currencyFrom.currency
     }).format(inputValue);
 
-    document.querySelector("#converted-value").innerHTML = new Intl.NumberFormat(currencyTo.locale, {
+    toValueEl.innerHTML = new Intl.NumberFormat(currencyTo.locale, {
         style: "currency",
         currency: currencyTo.currency
     }).format(convertedValue);
+
+    fromValueEl.classList.add("fade");
+    toValueEl.classList.add("fade");
+
 
 }
 
@@ -84,6 +98,22 @@ function changeCurrency() {
     // Atualiza moeda ORIGEM
     currencyFromName.innerHTML = selectedCurrencyFrom.name;
     currencyFromImage.src = selectedCurrencyFrom.image;
+
+    currencyToName.classList.remove("fade");
+    currencyToImage.classList.remove("fade");
+    currencyFromName.classList.remove("fade");
+    currencyFromImage.classList.remove("fade");
+
+    void currencyToName.offsetWidth;
+    void currencyToImage.offsetWidth;
+    void currencyFromName.offsetWidth;
+    void currencyFromImage.offsetWidth;
+
+    currencyToName.classList.add("fade");
+    currencyToImage.classList.add("fade");
+    currencyFromName.classList.add("fade");
+    currencyFromImage.classList.add("fade");
+
 
     convertValues();
 }

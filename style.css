@@ -8,12 +8,12 @@
 
 
 body {
-    background-color: #8a51fc;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow-y: auto;
+  background-color: #8a51fc;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden; 
 }
 
 
@@ -27,11 +27,13 @@ body {
 
 
 main {
-    width: 375px;
+    max-width: 375px;
+    width: 100%;
     background: #f4f4f4;
     border-radius: 20px;
     padding: 44px 24px 23px;
 }
+
 
 
 
@@ -122,4 +124,26 @@ section {
     font-weight: 700;
     font-size: 20px;
     color: #777777;
+}
+
+@media (max-height: 700px) {
+    body {
+        align-items: flex-start;
+        padding-top: 20px;
+    }
+}
+
+.fade {
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
