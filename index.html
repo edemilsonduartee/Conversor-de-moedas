@@ -22,6 +22,10 @@
             Converter <b>de</b>
             <select id="currency-from">
                 <option value="real">R$ Real Brasileiro</option>
+                <option value="dolar" >US$ Dólar Americano</option>
+                <option value="euro">€ Euro</option>
+                <option value="libra">£ Libra</option>
+                <option value="bitcoin">₿ Bitcoin</option>
             </select>
         </label>
 
@@ -32,6 +36,7 @@
                 <option value="euro">€ Euro</option>
                 <option value="libra">£ Libra</option>
                 <option value="bitcoin">₿ Bitcoin</option>
+                <option value="real">R$ Real Brasileiro</option>
             </select>
         </label>
 
@@ -43,11 +48,11 @@
 
         <section>
             <div class="box1">
-                <img src="/img/bandeiraBrasil.png"  alt="Bandeira do Brasil">
-                <p class="currency"> Real Brasileiro</p>
+                <img src="/img/bandeiraBrasil.png"  alt="Bandeira do Brasil" id="currency-from-image">
+                <p class="currency" id="currency-from-name"> Real Brasileiro</p>
                 <p class="currency-value-to-convert" id="real-value">R$ 0,00</p>
             </div>
-
+ 
             <img class="seta-img" src="/img/seta.png" alt="Seta indicando conversão">
 
             <div class="box2">
