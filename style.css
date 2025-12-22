@@ -12,8 +12,9 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  overflow-x: hidden; 
+  align-items: center;     /* eixo horizontal */
+  justify-content: center; /* eixo vertical */
+  overflow-x: hidden;
 }
 
 
@@ -22,6 +23,7 @@ body {
     width: 300px;
     display: block;
     margin-bottom: 20px;
+    margin: 0 auto;
 }
 
 
@@ -32,6 +34,7 @@ main {
     background: #f4f4f4;
     border-radius: 20px;
     padding: 44px 24px 23px;
+    margin: 0 auto;
 }
 
 
@@ -112,6 +115,7 @@ section {
   height: 80px;
   object-fit: contain;
   display: block; /* ou pode até remover */
+  color: #777777;
 }
 
 
@@ -120,7 +124,8 @@ section {
     color: #777777;
 }
 
-.currency-value {
+.currency-value,
+.currency-value-to-convert {
     font-weight: 700;
     font-size: 20px;
     color: #777777;
