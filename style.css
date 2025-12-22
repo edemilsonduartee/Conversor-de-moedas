@@ -20,8 +20,8 @@ body {
 
 
 .logo {
-    width: 300px;
-    display: block;
+    width: clamp(180px, 40vw, 250px);
+    display: flex;
     margin-bottom: 20px;
     margin: 0 auto;
 }
@@ -130,6 +130,13 @@ section {
     font-size: 20px;
     color: #777777;
 }
+
+@media (max-width: 480px) {
+  .logo {
+    display: none;
+  }
+}
+
 
 @media (max-height: 700px) {
     body {
